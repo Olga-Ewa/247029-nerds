@@ -22,138 +22,166 @@
 				<li>Магазин</li>
 				<li>Контакты</li>
 			</ul>
-			<div class="header-box">
+			<div class="header-menu-box">
 				<a href="#"><img src="#" alt="Иконка">Корзина</a>
 			</div>
 		</nav>
-		<div class="header-text">
+		<div class="header-main">
 			<h2>Магазин готовых шаблонов</h2>
 		</div>
 	</div>
 
 <!--Основной текст-->
-	<!-- Форма-->
 	<div class="user">
+	<!-- Форма-->
+		<div class="user-form">
 		<form action="#" method="post">
-			<div class="user">
 			<!-- Стоимость-->
 				<div class="user-form-cost">
 				<fieldset>
 					<legend>Стоимость</legend>
-					<div class="user-cost-range">
+					<div class="user-form-cost-range">
 						<input type="range" min="0" max="15000" step="1000"><br>
 					</div>
-					<div class="user-cost-from">
+					<div class="user-form-cost-from">
 						<label for="from">от</label>
 						<input type="text" name="from" id="from">
 					</div>
-					<div class="user-cost-to">
+					<div class="user-form-cost-to">
 						<label for="to">до</label>
 						<input type="text" name="to" id="to">
 					</div>
 				</fieldset>
-			</div>
+				</div>
 		
 			<!-- Сетка-->
 				<div class="user-form-grid">
-			<fieldset>
-				<legend>Сетка</legend>
-				<input type="radio" name="grid" id="grid-1" value="grid-1" checked="">
-				<label for="grid">Адаптивная</label>
-				<br>
-				<input type="radio" name="grid" id="grid-2" value="grid-2">
-				<label>Фиксированная</label>
-				<br>
-				
-				<input type="radio" name="grid" id="grid-3" value="grid-3">
-				<label for="grid">Резиновая</label>
-			</fieldset>
-		</div>
+				<fieldset>
+					<legend>Сетка</legend>
+					<input type="radio" name="grid" id="grid-1" value="grid-1" checked="">
+					<label for="grid-1">Адаптивная</label>
+					<br>
+					<input type="radio" name="grid" id="grid-2" value="grid-2">
+					<label for="grid-2">Фиксированная</label>
+					<br>
+					<input type="radio" name="grid" id="grid-3" value="grid-3">
+					<label for="grid-3">Резиновая</label>
+				</fieldset>
+				</div>
 			<!-- Особенности-->
 				<div class="user-form-feature">
 				<fieldset>
 				<legend>Особенности</legend>
 				<input type="checkbox" name="feature" id="feature-1" value="feature-1" checked="">
-				<label for="feature">Слайдер</label>
+				<label for="feature-1">Слайдер</label>
 				<br>
 				<input type="checkbox" name="feature" id="feature-2" value="feature-2">
-				<label for="feature">Блок преимуществ</label>
+				<label for="feature-2">Блок преимуществ</label>
 				<br>
 				<input type="checkbox" name="feature" id="feature-3" value="feature-3" checked="">
-				<label>Новости</label>
+				<label for="feature-3">Новости</label>
 				<br>
 				<input type="checkbox" name="feature" id="feature-4" value="feature-4">
-				<label for="feature">Галерея</label>
+				<label for="feature-4">Галерея</label>
 				<br>
 				<input type="checkbox" name="feature" id="feature-5" value="feature-5">
-				<label>Корзина</label>
-			</fieldset>
-			<div class="user-btn">
-			<fieldset>
-			<input type="submit" name="show" id="show" value="Показать">
-			</fieldset>
-			</div>
-		</div>
-			</div>
+				<label for="feature-5">Корзина</label>
+				</fieldset>
+				</div>
+				<div class="user-form-btn">
+				<fieldset>
+				<input type="button" name="show" id="show" value="Показать">
+				</fieldset>
+				</div>
 		</form>
+		</div>
 
-	<!--Cортировкf -->
+	<!--Cортировка -->
 		<div class="user-sort">
-			<b>СОРТИРОВАТЬ:</b>
+			<b>Сортировать:</b>
 			<ul>
-				<li>ПО ЦЕНЕ</li>
-				<li>ПО ТИПУ</li>
-				<li>ПО НАЗВАНИЮ</li>
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По названию</a></li>
 				<li><a href="#"><img src="#"><a></li>
 				<li><a href="#"><img src="#"><a></li>
 			</ul>
-		<</div>>
+		</div>
 	<!-- Результаты поиска-->
 		<div class="user-photo">
-			<img src="#" alt="Sedona">
-			<img src="#" alt="Pink">
-			<img src="#" alt="Borodinsky">
-			<img src="#" alt="Mishka">
-			<img src="#" alt="A+">
-			<img src="#" alt="Кваст">
+			<ul class="user-photo-sedona">
+				<li>Sedona<img src="#" alt="Sedona"></li>
+				<div class="user-photo-sedona-price">
+					<b>Sedona</b>
+					<p>Информационный сайт для туристов</p>
+					<button class="user-photo-sedona-price-btn">9900 руб.</button>
+				</div>
+				<li>Фото товара 2<img src="#" alt="Фото товара"></li>
+				<li>Фото товара 3<img src="#" alt="Фото товара"></li>
+			</ul>
+		</div>
+			<ul class="user-photo-pink">
+				<li>Pink<img src="#" alt="Pink"></li>
+				<li>Фото товара 2<img src="#" alt="Фото товара"></li>
+				<li>Фото товара 3<img src="#" alt="Фото товара"></li>
+			</ul>
+			<ul class="user-photo-dorodinsky">
+				<li>Borodinsky<img src="#" alt="Borodinsky"></li>
+				<li>Borodinsky 2<img src="#" alt="Фото товара"></li>
+				<li>Borodinsky 3<img src="#" alt="Фото товара"></li>
+			</ul>
+			<ul class="user-photo-mishka">
+				<li>Mishka<img src="#" alt="Mishka"></li>
+				<li>Mishka 2<img src="#" alt="Фото товара"></li>
+				<li>Mishka 3<img src="#" alt="Фото товара"></li>
+			</ul>
+			<ul class="user-photo-a">
+				<li>A+<img src="#" alt="A+"></li>
+				<li>A+ 2<img src="#" alt="Фото товара"></li>
+				<li>A+ 3<img src="#" alt="Фото товара"></li>
+			</ul>
+			<ul class="user-photo-kvast">
+				<li>Кваст<img src="#" alt="Кваст"></li>
+				<li>Кваст 2<img src="#" alt="Фото товара"></li>
+				<li>Кваст 3<img src="#" alt="Фото товара"></li>
+			</ul>
 		</div>
 	<!-- Странички-->
-		<div class="user-numper-page">
-			<a href="#" class="number-page-btn">1</a>
-			<a href="#" class="number-page-btn">2</a>
-			<a href="#" class="number-page-btn">3</a>
-			<a href="#" class="number-page-btn-next">Следующая</a>
+		<div class="user-page">
+			<a href="#" class="user-page-btn">1</a>
+			<a href="#" class="user-page-btn">2</a>
+			<a href="#" class="user-page-btn">3</a>
+			<a href="#" class="user-page-btn-next">Следующая</a>
 		</div>
-
 	</div>
 <!-- Подвал-->
 	<div class="footer">
 		<!-- Как проехать-->
-		<div class="user-adress">
-			<div class="user-adress-map">
+		<div class="footer-adress">
+			<div class="footer-adress-map">
 				<img src="#" alt="Карта">
 			</div>	
-			<div class="user-adress-email">
-				<b>NERDS DESIGH STUDIO</b>
+			<div class="footer-adress-contact">
+				<b>Nerds desigh studio</b>
 				<p>191186 Санкт-Петербург<br>
 				ул. Б.Конюшенная, д.19/8<br>
 				тел.+7(812)275-75-75
 				</p>
-				<div class="user-adress-email-btn">
-				<form action="#" method="post">
-					<input type="submit" name="write me" id="write me" value="НАПИШИТЕ НАМ">
-				</form>
+				<div class="footer-adress-contact-btn">
+					<form action="#" method="post">
+					<input type="submit" name="write me" id="write me" value="Напишите нам">
+					</form>
 				</div>
 			</div>
-			<div class="user-adress-logo">
+			<div class="footer-adress-logo">
 				<img src="#" alt="Логотип">
 			</div>
 		</div>
-		<!-- Социальные сети-->
+		<!-- Социальная сети-->
 		<div class="footer-social">
-			<a href="#" social-btn><img src="#" alt="ВК">В контакте</a>
-			<a href="#" social-btn><img src="#" alt="FB">Facebook</a>
-			<a href="#" social-btn><img src="#" alt="I">Instagram</a>
+			<a href="#" class="social-btn"><img src="#" alt="ВК">В контакте</a>
+			<a href="#" class="social-btn"><img src="#" alt="FB">Facebook</a>
+			<a href="#" class="social-btn"><img src="#" alt="I">Instagram</a>
 		</div>
 		<div class="footer-sale">
 			<b>Давайте дружить, это выгодно</b>
