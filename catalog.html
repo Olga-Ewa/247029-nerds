@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -10,10 +11,10 @@
     
 <!-- Шапка сайта-->
 
-	<div class="header">
+	<div class="container clearfix">
 	
 	<!--Навигация-->
-		<nav class="header-menu clearfix">
+		<nav class="header clearfix">
 			<!--Логотип-->
 			<div class="header-menu-logo">
 			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
@@ -36,7 +37,7 @@
 	</div>
 
 <!--Основной текст-->
-	<div class="user clearfix">
+	<div class="container clearfix">
 	<!-- Форма-->
 		<div class="user-form">
 		<form action="#" method="post">
@@ -116,55 +117,20 @@
 			</ul>
 		</div>
 	<!-- Результаты поиска-->
-		<div class="user-photo">
-			<div class="user-photo-sedona">
-			<ul>
-				<li>Sedona<img src="img/catalog.html/img-sedona.jpg" width="360" height="576" alt="Sedona"></li>
+			<ul class="user-market">
+				<li>Sedona<img src="img/catalog.html/img-sedona.jpg" width="360" height="576" alt="Sedona">
 				<div class="user-photo-sedona-price">
 					<b>Sedona</b>
 					<p>Информационный сайт для туристов</p>
 					<button class="user-photo-sedona-price-btn">9900 руб.</button>
 				</div>
-				<li>Фото товара 2<img src="" alt="Фото товара"></li>
-				<li>Фото товара 3<img src="" alt="Фото товара"></li>
-			</ul>
-			</div>
-			<div class="user-photo-pink">
-			<ul>
+				</li>
 				<li>Pink<img src="img/catalog.html/img-pink.jpg" width="360" height="576" alt="Pink"></li>
-				<li>Фото товара 2<img src="" alt="Фото товара"></li>
-				<li>Фото товара 3<img src="" alt="Фото товара"></li>
-			</ul>
-			</div>
-			<div class="user-photo-dorodinsky">
-			<ul>
 				<li>Borodinsky<img src="img/catalog.html/img-barbershop.jpg" width="360" height="576" alt="Borodinsky"></li>
-				<li>Borodinsky 2<img src="#" alt="Фото товара"></li>
-				<li>Borodinsky 3<img src="#" alt="Фото товара"></li>
-			</ul>
-			</div>
-			<div class="user-photo-mishka">
-			<ul>
 				<li>Mishka<img src="img/catalog.html/img-mishka.jpg" width="360" height="576" alt="Mishka"></li>
-				<li>Mishka 2<img src="#" alt="Фото товара"></li>
-				<li>Mishka 3<img src="#" alt="Фото товара"></li>
-			</ul>
-			</div>
-			<div class="user-photo-a">
-			<ul>
 				<li>A+<img src="img/catalog.html/img-aplus.jpg" width="360" height="576" alt="A+"></li>
-				<li>A+ 2<img src="#" alt="Фото товара"></li>
-				<li>A+ 3<img src="#" alt="Фото товара"></li>
-			</ul>
-			</div>
-			<div class="user-photo-kvast">
-			<ul>
 				<li>Кваст<img src="img/catalog.html/img-kvast.jpg" width="360" height="576" alt="Кваст"></li>
-				<li>Кваст 2<img src="#" alt="Фото товара"></li>
-				<li>Кваст 3<img src="#" alt="Фото товара"></li>
 			</ul>
-			</div>
-		</div>
 	<!-- Странички-->
 		<div class="user-page">
 			<a href="#" class="user-page-btn">1</a>
@@ -174,8 +140,9 @@
 		</div>
 	</div>
 <!-- Подвал-->
-		<div class="footer">
+	<div class="container clearfix">
 		<!-- Как проехать-->
+		<div class="footer clearfix">
 		<div class="footer-adress clearfix">
 			<div class="footer-adress-map">
 				<img src="#" alt="Карта">
@@ -207,6 +174,7 @@
 			<b>Давайте дружить, это выгодно</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
+		</div>
 		</div>
 	</div>
 

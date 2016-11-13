@@ -19,6 +19,22 @@ h3
 	text-align: center;
 }
 
+*/*
+{
+	box-sizing: border-box;
+}
+
+*before
+{
+	box-sizing: border-box;
+}
+
+*after
+{
+	box-sizing: border-box;
+}
+*/
+
 .clearfix::after 
 {
   content: "";
@@ -27,33 +43,26 @@ h3
   clear: both;
 }
 
-.header
+.container
 {
 	background-color: #f1f0ed;
-	margin-bottom: 80px;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 140px;
+	/*margin-bottom: 80px;*/
 }
 
 .header-menu
 {
-	/*background-color: #ca35b8;*/
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0px 20px;
-}
-
-.header-main
-{
-	/*background-color: #76c13e;*/
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0px 20px;
+	margin-bottom: 80px;
 }
 
 .header-menu-logo
 {
 	float: left;
-	width: 360px;
+	width: 160px;
 	padding-top: 45px;
+	margin-right: 200px;
 }
 
 .header-menu-navigation
@@ -70,6 +79,11 @@ h3
 	padding-top: 45px;
 }
 
+.header-main
+{
+	margin-bottom: 80px;
+}
+
 .header-main-text
 {
 	float: left;
@@ -83,21 +97,9 @@ h3
 	width: 760px;
 }
 
-.user
+.user-menu
 {
-	/*background-color: #85f00f;*/
-	background-color: white;
-}
-
-.user-menu,
-.user-about,
-.user-projects
-{
-	/*background-color: #5ea28a;*/
-	width: 1160px;
-	margin: 0 auto;
 	margin-bottom: 80px;
-	padding: 0px 20px;
 }
 
 .user-menu-block
@@ -109,7 +111,14 @@ h3
 
 .user-menu-block:last-child
 {
+	float: right;
+	width: 300px;
 	margin-right: 60px;
+}
+
+.user-about
+{
+	margin-bottom: 80px;
 }
 
 .user-about-store
@@ -125,40 +134,87 @@ h3
 	width: 360px;
 }
 
+.user-about-plus-procent ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.user-about-plus-procent li
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+	vertical-align: top;
+}
+
+.user-about-plus-procent li:last-child
+{
+	margin-right: 0px;
+}
+
+.user-projects ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.user-projects li
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	width: 260px;
+	margin-right: 35px;
+	vertical-align: top;
+}
+
+.user-projects li:last-child
+{
+	margin-right: 0px;
+}
+
 .footer
 {
-	/*background-color: #1ce3cb;*/
 	margin-top: 80px;
 }
 
-.footer-adress,
-.footer-social
+.footer-adress
 {
-	/*background-color: #a64db3;*/
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0px 20px;
+	margin-bottom: 60px;
 }
 
 .footer-adress-contact
 {
 	float: left;
 	width: 320px;
-	margin-right: 360px;
 	padding-top: 55px;
 	padding-bottom: 55px;
 }
 
 .footer-adress-logo
 {
+	float: right;
+	margin-right: 355px;
 	padding-top: 90px;
+}
+
+.footer-social-sale
+{
+	margin-bottom: 60px;
 }
 
 .footer-social-btn
 {
 	float: left;
-	width: 280px;
-	margin-right: 120px;
+	width: 260px;
+	margin-right: 140px;
 }
 
 .footer-social-sale
@@ -168,54 +224,46 @@ h3
 }
 
 /*Каталог*/
+
 .user-form
 {
-	background-color: #c23d54;
 	float: left;
 	width: 260px;
-	margin-left: 150px;
-	margin-right: 120px
+	margin-right: 140px;
 }
 
 .user-sort
 {
-	background-color: #cbd827;
-	float: right;
-	width: 780px;
-	margin-bottom: 25px;
-	margin-right: 150px;
+	float: left;
+	width: 760px;
+	margin-bottom: 60px;
 }
 
-.user-photo
+.user-market
 {
-	background-color: #25adda;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	float: right;
-	width: 780px;
-	margin-right: 150px;
+	width: 760px;
+	margin-bottom: 60px;
+}
+
+.user-market li
+{
+	display: inline-block;
+	margin-right: 35px;
+	width: 360px;
+	vertical-align: top;
+}
+
+.user-market li:nth-child(even)
+{
+	margin-right: 0px;
 }
 
 .user-page
 {
 	clear: both;
 	text-align: center;
-}
-
-.user-photo-sedona,
-.user-photo-pink,
-.user-photo-dorodinsky,
-.user-photo-mishka,
-.user-photo-a,
-.user-photo-kvast
-{
-	display: inline-block;
-	width: 360px;
-	vertical-align: top;
-}
-
-.user-photo-sedona-price
-{
-	float: left;
-	margin-right: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
 }
