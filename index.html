@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -11,7 +12,7 @@
  
 <!-- Шапка сайта-->
 
-	<div class="container clearfix">
+	<div class="container grey clearfix">
 	
 	<!--Навигация-->
 		<nav class="header clearfix">
@@ -21,20 +22,20 @@
 			</div>
 			<div class="header-menu-navigation">
 			<ul>
-				<li>Студия</li>
-				<li>Клиенты</li>
-				<li>Магазин</li>
-				<li>Контакты</li>
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты<a></li>
+				<li><a href="#">Магазин<a></li>
+				<li><a href="#">Контакты<a></li>
 			</ul>
 			</div>
 			<div class="header-menu-box">
-				<a href="#"><img src="#" alt="Иконка">Корзина</a>
+			<a class="header-menu-box-enter" href="#">Корзина</a>
 			</div>
 		</nav>
 		<!--Текст +слайдер -->
 		<div class="header-main">
 			<div class="header-main-text">
-				<h2>Долго, дорого, скурпулезно.</h2>
+				<h2 class="long">Долго, дорого, скурпулезно.</h2>
 				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 				<a href="#">Узнать больше</a>
 			</div>
@@ -77,7 +78,7 @@
 		<!-- О студии-->
 		<div class="user-about clearfix">
 			<div class="user-about-store">
-				<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+				<span>Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математерический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<b>Выполняем заказы на разработку:</b>
 				<ul class="user-about-store-do">
@@ -88,14 +89,14 @@
 			</div>
 			<div class="user-about-plus">
 				<div class="user-about-plus-logo">
-					<img src="img/index.html/nerds-illustration.jpg" width="360" height="208" alt="Логотип">
+					<img src="img/index.html/nerds-illustration.jpg" width="360" height="208" alt="Логотип"><br><br>
 					<b>с 2004 года любим точность во всем:</b>
 				</div>
 					<div class="user-about-plus-procent">
 					<ul>
-						<li>146%<br>Уровень самоотдачи</li>
-						<li>100%<br>Соблюдение сроков</li>
-						<li>50%<br>Минимальная предоплата</li>
+						<li><b>146%</b><br>Уровень самоотдачи</li>
+						<li><b>100%</b><br>Соблюдение сроков</li>
+						<li><b>50%</b><br>Минимальная предоплата</li>
 					</ul>
 					</div>				
 			</div>
@@ -111,11 +112,11 @@
 			</ul>
 			</div>
 		</div>
+		</div>
 
 <!-- Подвал-->
-	<div class="container clearfix">
+	<div class="container footer clearfix">
 		<!-- Как проехать-->
-		<div class="footer clearfix">
 		<div class="footer-adress clearfix">
 			<div class="footer-adress-map">
 				<img src="#" alt="Карта">
@@ -147,7 +148,6 @@
 			<b>Давайте дружить, это выгодно</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</div>
 		</div>
 	</div>
 

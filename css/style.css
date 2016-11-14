@@ -1,25 +1,67 @@
 body
 {
-	font-size: 12px;
-	font-family: "Roboto";
+	font-size: 16px;
+	font-family: "Roboto", "Arial";
+	line-height: 24px;
+}
+
+.sprite {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-icon {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb-icon {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -45px;
+}
+
+.sprite-insta-icon {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -87px;
+}
+
+.sprite-sort-down {
+    width: 9px;
+    height: 9px;
+    background-position: -10px -128px;
+}
+
+.sprite-sort-up {
+    width: 9px;
+    height: 9px;
+    background-position: -10px -157px;
+}
+
+.sprite-vk-icon {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -186px;
 }
 
 h2
 {
 	font-size: 55px;
-	font-family: "Myriad Pro";
 	text-align: center;
+	line-height: 55px;
 }
 
 h3
 {
 	font-size: 24px;
-	font-family: "Myriad Pro";
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 }
 
-*/*
+/**
 {
 	box-sizing: border-box;
 }
@@ -34,6 +76,7 @@ h3
 	box-sizing: border-box;
 }
 */
+
 
 .clearfix::after 
 {
@@ -51,6 +94,11 @@ h3
 	padding: 0 140px;
 }
 
+.grey
+{
+	background: #eeeef0;
+}
+
 .header-menu
 {
 	margin-bottom: 80px;
@@ -61,6 +109,7 @@ h3
 	float: left;
 	width: 160px;
 	padding-top: 45px;
+	padding-bottom: 20px;
 	margin-right: 200px;
 }
 
@@ -68,19 +117,81 @@ h3
 {
 	float: left;
 	width: 640px;
-	padding-top: 45px;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.header-menu-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.header-menu-navigation li
+{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-right: 50px;
+}
+
+.header-menu-navigation li:last-child
+{
+	margin-right: 0px;
+}
+
+.header-menu-navigation a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.header-menu-navigation a:hover
+{
+	color: red;
 }
 
 .header-menu-box
 {
 	float: right;
-	width: 160px;
-	padding-top: 45px;
+	max-width: 160px;
+	padding-top: 80px;
+	padding-bottom: 20px;
 }
 
-.header-main
+.header-menu-box-enter
 {
-	margin-bottom: 80px;
+	position: relative;
+	
+	display: inline-block;
+	vertical-align: top;
+	
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+}
+
+.header-menu-box-enter:hover
+{
+	color: red;
+}
+
+.header-menu-box-enter::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -35px;
+  
+	width: 15px;
+	height: 15px;
+
+	background: red url("img/sprite.png") no-repeat;
+	background-position: -10px -10px;
 }
 
 .header-main-text
@@ -88,6 +199,11 @@ h3
 	float: left;
 	width: 380px;
 	margin-right: 20px;
+}
+
+.long
+{
+	text-align: left;
 }
 
 .header-menu-picture
@@ -98,6 +214,7 @@ h3
 
 .user-menu
 {
+	margin-top: 80px;
 	margin-bottom: 80px;
 }
 
@@ -113,6 +230,12 @@ h3
 	float: right;
 	width: 300px;
 	margin-right: 60px;
+}
+
+.user-about-store span
+{
+	font-size: 45px;
+	line-height: 45px;
 }
 
 .user-about
@@ -132,6 +255,12 @@ h3
 	width: 360px;
 }
 
+.user-about-plus-logo
+{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
 .user-about-plus-procent ul
 {
 	margin: 0;
@@ -141,13 +270,16 @@ h3
 
 .user-about-plus-procent li
 {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	display: inline-block;
 	width: 100px;
 	margin-right: 20px;
 	vertical-align: top;
+}
+
+.user-about-plus-procent li b
+{
+	font-size: 45px;
+	line-height: 10,6px;
 }
 
 .user-about-plus-procent li:last-child
@@ -184,6 +316,7 @@ h3
 .footer-adress
 {
 	margin-bottom: 60px;
+	background-image: url("img/Map.jpg") no-repeat;
 }
 
 .footer-adress-contact
@@ -219,6 +352,13 @@ h3
 	width: 600px;
 }
 
+.btn {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
 /*Каталог*/
 
 .main
@@ -247,6 +387,7 @@ h3
 	padding: 0;
 	list-style: none;
 	font-size: 0px;
+	margin-bottom: 60px;
 }
 
 .user-market li
