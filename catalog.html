@@ -11,14 +11,13 @@
 
     
 <!-- Шапка сайта-->
-
-	<div class="container grey clearfix">
-	
-	<!--Навигация-->
+	<div class="header">
+	<div class="container clearfix">
+		<!--Навигация-->
 		<nav class="header clearfix">
 			<!--Логотип-->
 			<div class="header-menu-logo">
-			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+			<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
 			</div>
 			<div class="header-menu-navigation">
 			<ul>
@@ -35,6 +34,7 @@
 		<div class="header-main">
 			<h2>Магазин готовых шаблонов</h2>
 		</div>
+	</div>
 	</div>
 
 <!--Основной текст-->
@@ -109,13 +109,14 @@
 		<div class="main">
 			<!--Cортировка -->
 			<div class="main-user-sort">
-				<b>Сортировать:</b>
+				
 				<ul>
+					<li><b>Сортировать:</b></li>
 					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По названию</a></li>
-					<li><a href="#"><img src="#"></a></li>
-					<li><a href="#"><img src="#"></a></li>
+					<li><a href="#" class="disabled">По типу</a></li>
+					<li><a href="#" class="disabled">По названию</a></li>
+					<li><a href="#" class="btn-sort"></a></li>
+					<li><a href="#"></a></li>
 				</ul>
 			</div>
 			<!-- Результаты поиска-->
@@ -124,7 +125,7 @@
 					<div class="user-photo-sedona-price">
 						<b>Sedona</b>
 						<p>Информационный сайт для туристов</p>
-						<button class="user-photo-sedona-price-btn">9900 руб.</button>
+						<button class="btn">9 900 руб.</button>
 					</div>
 					</li>
 					<li>Pink<img src="img/catalog.html/img-pink.jpg" width="360" height="576" alt="Pink"></li>
@@ -141,45 +142,38 @@
 				<a href="#" class="user-page-btn-next">Следующая</a>
 			</div>
 		</div>
-		</div>
+	</div>
 <!-- Подвал-->
+	<div class="footer clearfix">
 	<div class="container clearfix">
 		<!-- Как проехать-->
-		<div class="footer clearfix">
-		<div class="footer-adress clearfix">
-			<div class="footer-adress-map">
-				<img src="#" alt="Карта">
-			</div>
 			<div class="footer-adress-contact">
 				<b>Nerds desigh studio</b>
 				<p>191186 Санкт-Петербург<br>
-				ул. Б.Конюшенная, д.19/8<br>
-				тел.+7(812)275-75-75
-				</p>
-				<div class="footer-adress-contact-btn">
-					<form action="#" method="post">
-					<input type="submit" name="write me" id="write me" value="Напишите нам">
-					</form>
-				</div>
+				ул. Б.Конюшенная, д.19/8</p>
+				<p>тел.+7(812)275-75-75</p>
+				<form action="#" method="post">
+					<input class="btn" type="submit" name="write me" id="write me" value="Напишите нам">
+				</form>
 			</div>
 			<div class="footer-adress-logo">
 				<img src="img/map-marker.png" width="367" height="190" alt="Логотип">
 			</div>
 		</div>
-		<!-- Социальная сети-->
+		</div>
+<!-- Социальная сети-->
+	<div class="container clearfix">
 		<div class="footer-social clearfix">
 			<div class="footer-social-btn">
-			<a href="#" class="social-btn"><img src="#" alt="ВК">В контакте</a>
-			<a href="#" class="social-btn"><img src="#" alt="FB">Facebook</a>
-			<a href="#" class="social-btn"><img src="#" alt="I">Instagram</a>
+			<a href="#" class="social-btn social-vk" alt="ВК"></a>
+			<a href="#" class="social-btn social-fb" alt="FB"></a>
+			<a href="#" class="social-btn social-i" alt="I"></a>
 			</div>
 			<div class="footer-social-sale">
-			<b>Давайте дружить, это выгодно</b>
+			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
-		</div>
 	</div>
-
   </body>
 </html>
