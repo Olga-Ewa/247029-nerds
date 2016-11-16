@@ -41,21 +41,21 @@
 	<div class="container clearfix">
 	<!-- Форма-->
 		<div class="user-form">
-		<form action="#" method="post">
+		<form action="#" method="get">
 			<!-- Стоимость-->
 				<div class="user-form-cost">
 				<fieldset>
 					<legend>Стоимость</legend>
 					<div class="user-form-cost-range">
-						<input type="range" min="0" max="15000" step="1000"><br>
+						<div class="scale" <!--style="margin-left: 20%; width: 30%"-->
+							<div class="bar"></div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
 					</div>
-					<div class="user-form-cost-from">
-						<label for="from">от</label>
-						<input type="text" name="from" id="from">
-					</div>
-					<div class="user-form-cost-to">
-						<label for="to">до</label>
-						<input type="text" name="to" id="to">
+					<div class="user-form-cost-prise-control">
+						<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+						<label class="max-price">до<input name="max-price" type="text" value="15000"></label>
 					</div>
 				</fieldset>
 				</div>

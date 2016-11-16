@@ -733,3 +733,88 @@ h3
 {
 	width: 260px;
 }
+
+.user-form-cost
+{
+	width: 260px;
+  	margin: 50px auto; /* для демонстрации */
+}
+
+.user-form-cost-range 
+{
+  	position: relative;
+  	height: 41px;
+  	padding-top: 39px;
+    padding-right: 20px;
+  	padding-left: 20px;
+  	margin-bottom: 15px;
+  	border-radius: 5px;
+  	background: #f1f1f1;
+}
+
+.user-form-cost-range .scale 
+{
+  	height: 2px;
+  	background: #d7dcde;
+}
+
+.user-form-cost-range .bar 
+{
+  	width: 70%;
+  	height: 2px;
+  	background: #00ca74;
+}
+
+.user-form-cost-range .toggle 
+{
+	position: absolute;
+  	top: 30px;
+  	left: 0px;
+   	width: 4px;
+   	height: 4px;
+   	cursor: pointer;
+   	border: 8px solid #fff;
+   	border-radius: 50%;
+   	background: #ababab;
+   	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.user-form-cost-range .toggle-min 
+{
+  	left: 10px;
+}
+
+.user-form-cost-range .toggle-max 
+{
+  	left: 145px;
+}
+
+.user-form-cost-prise-control
+{
+  	font-size: 0;
+}
+
+.user-form-cost-prise-control label 
+{
+  	font-size: 16px;
+  	display: inline-block;
+  	width: 50%;
+}
+
+.max-price 
+{
+   text-align: right;
+}
+
+.user-form-cost-prise-control input {
+  	font-family: 'Roboto', 'Arial', sans-serif;
+  	font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+  	padding: 8px 10px;
+  	text-align: center;
+  	color: #283136;
+  	border: none;
+  	border-radius: 5px;
+  	background: #f1f1f1;
+}
