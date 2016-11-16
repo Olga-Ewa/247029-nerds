@@ -113,10 +113,9 @@ h3
 	opacity: 0.8;
 }
 
-.header-menu-logo .disabled,
-.header-menu-logo:disabled 
+.header-menu-logo .disabled
 {
-	opacity: 0.3;
+	opacity: 0.1;
 }
 
 .header-menu-navigation
@@ -160,14 +159,7 @@ h3
 	color: #fb565a;
 }
 
-.header-menu-navigation.disabled a,
-.header-menu-navigation a:disabled 
-{
-	opacity: 0.3;
-}
-
-.header-menu-navigation.disabled a:hover,
-.header-menu-navigation a:disabled:hover
+.header-menu-navigation .disabled
 {
 	opacity: 0.3;
 }
@@ -234,7 +226,9 @@ h3
 .user-menu
 {
 	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-bottom: 79px;
+	padding-bottom: 79px;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .user-menu-block
@@ -306,6 +300,12 @@ h3
 	margin-right: 0px;
 }
 
+.user-projects
+{
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+
 .user-projects ul
 {
 	margin: 0;
@@ -337,10 +337,11 @@ h3
 	opacity: 1;
 }
 
-.projects-logo.disabled a,
-.projects-logo a:disabled 
+/*Проверть еще раз*/
+.user-projects .disabled
 {
 	opacity: 0.1;
+	
 }
 
 .footer
@@ -428,20 +429,17 @@ h3
 }
 
 .btn:hover,
-.btn:active {
+.btn:active 
+{
   	background-color: #e74246;
 }
 
-.btn.disabled,
-.btn:disabled {
+.btn.disabled
+.btn:disabled
+{
   	cursor: default;
   	background-color: #da5154;
-  	/*opacity: 0.8;*/
-}
-
-.btn.disabled:hover,
-.btn:disabled:hover {
-  background-color: #da5154;
+  	opacity: 0.8;
 }
 
 .btn-green {
@@ -456,18 +454,21 @@ h3
 }
 
 .btn-green.disabled,
-.btn-green:disabled {
+.btn-green:disabled 
+{
   	cursor: default;
   	background-color: #00aa62;
-  	/*opacity: 0.8;*/
+  	opacity: 0.8;
 }
 
 .btn-green.disabled:hover,
-.btn-green:disabled:hover {
-  background-color: #00aa62;
+.btn-green:disabled:hover 
+{
+  	background-color: #00aa62;
 }
 
-.btn-yellow {
+.btn-yellow 
+{
     background-color: #efc84a;
  	border: none;
 	cursor: pointer;
@@ -479,7 +480,8 @@ h3
 }
 
 .btn-yellow.disabled,
-.btn-yellow:disabled {
+.btn-yellow:disabled 
+{
   	cursor: default;
   	background-color: #e5a722;
   	/*opacity: 0.8;*/
@@ -506,7 +508,8 @@ h3
 }
 
 .social-btn.disabled,
-.social-btn:disabled {
+.social-btn:disabled 
+{
   	cursor: default;
   	background-color: #d7373b;
   	/*opacity: 0.8;*/
@@ -696,7 +699,9 @@ h3
     min-width: 20px;
     height: 40px;
     padding: 0px 10px;
-    line-height: 18px;
+    margin-left: 10px;
+    
+    line-height: 40px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
@@ -704,4 +709,27 @@ h3
     color: black;
     
     background: #eeeeee;
+}
+
+.user-page a:hover
+{
+	background-color: #dfdfdf;
+}
+
+.user-page .disabled
+{
+	background-color: #d5d5d5;
+}
+
+.user-page .current
+{
+	background-color: white;
+	border: 2px solid #dbdbdb;
+	min-width: 16px;
+	height: 38px;
+}
+
+.user-page-btn-next
+{
+	width: 260px;
 }
