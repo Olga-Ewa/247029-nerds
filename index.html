@@ -11,7 +11,7 @@
 
 <!-- Шапка сайта-->
 	<div class="header">
-	<div class="container clearfix">
+		<div class="container clearfix">
 	<!--Навигация-->
 		<nav class="header clearfix">
 		<!--Логотип-->
@@ -19,36 +19,56 @@
 			<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
 			</div>
 			<div class="header-menu-navigation">
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты<a></li>
-				<li><a href="#">Магазин<a></li>
-				<li><a href="#">Контакты<a></li>
-			</ul>
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты<a></li>
+					<li><a href="#">Магазин<a></li>
+					<li><a href="#">Контакты<a></li>
+				</ul>
 			</div>
 			<div class="header-menu-box">
 			<a class="header-menu-box-enter" href="#">Корзина</a>
 			</div>
-		</nav>
-		<!--Текст +слайдер -->
-		<div class="header-main">
-			<div class="header-main-text">
-				<h2 class="long">Долго, дорого, скурпулезно.</h2>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a href="#" class="btn">Узнать больше</a>
-			</div>
-			<!--Слайдер -->
-			<div class="header-main-picture">
-				<ul>
-					<li>Фото товара 1<img src="img/index.html/slider-1.jpg" width="760" height="431" alt="Фото товара"></li>
-					<li>Фото товара 2<img src="#" alt="Фото товара"></li>
-					<li>Фото товара 3<img src="#" alt="Фото товара"></li>
-				</ul>
+			</nav>
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+        		<input type="radio" id="btn-2" name="toggle">
+        		<input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+          			<label for="btn-1"></label>
+          			<label for="btn-2"></label>
+          			<label for="btn-3"></label>        
+                </div>
+                <div class="slides">
+                	<div class="slide">
+            			<div class="slide-text">
+              				<div class="slide-title">Долго, дорого, скрупулезно.</div>
+              				<p>Математически выверенный дизайн<br>
+  							для вашего сайта или мобильного приложения.</p>
+              				<a class="btn" href="#">Узнать больше</a>
+              			</div>		
+            		</div>
+          			<div class="slide">
+            			<div class="slide-text">
+              				<div class="slide-title">Дорого, скрупулезно</div>
+              					<p>Математически выверенный дизайн<br>
+  								для вашего сайта или мобильного приложения.</p>
+              					<a class="btn" href="#">Узнать больше</a>
+            			</div>
+          			</div>
+          			<div class="slide">
+            			<div class="slide-text">
+              				<div class="slide-title">Скрупулезно</div>
+              					<p>Математически выверенный дизайн<br>
+  								для вашего сайта или мобильного приложения.</p>
+              					<a class="btn" href="#">Узнать больше</a>
+            				</div>
+          			</div>
+           		 </div>
 			</div>
 		</div>
-	</div>
-	</div>    
-
+		</div>
+	
 <!-- Основное меню-->
 	<div class="container clearfix">
 		<!-- Веб-сайты / Приложения / Презентации-->
@@ -122,8 +142,14 @@
 				ул. Б.Конюшенная, д.19/8
 				</p>
 				<p>тел.+7(812)275-75-75</p>
-				<form action="#" method="post">
-					<input class="btn" type="submit" name="write me" id="write me" value="Напишите нам">
+				<form class="writeme" action="#" method="post">
+					<input class="btn" type="submit" name="write" id="write" value="Напишите нам">
+					<div class="letter">
+						<b>Напишите нам</b>
+						<input type="text" name="your name" id="your name" value="Ваше имя"/>
+						<input type="email" name="email" id="email" value="Ваш email">
+						<input type="text" name="text" id="text" value="Текст">
+					</div>
 				</form>
 			</div>
 			<div class="footer-adress-logo">
