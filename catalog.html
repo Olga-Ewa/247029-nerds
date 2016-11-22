@@ -4,31 +4,30 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
-    
 <!-- Шапка сайта-->
 	<div class="header">
 	<div class="container clearfix">
-		<!--Навигация-->
+<!--Навигация-->
 		<nav class="header clearfix">
-			<!--Логотип-->
+<!--Логотип-->
 			<div class="header-menu-logo">
-			<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
+				<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
 			</div>
 			<div class="header-menu-navigation">
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты<a></li>
-				<li><a href="#">Магазин<a></li>
-				<li><a href="#">Контакты<a></li>
-			</ul>
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 			</div>
 			<div class="header-menu-box">
-			<a class="header-menu-box-enter" href="#">Корзина</a>
+				<a class="header-menu-box-enter" href="#">Корзина</a>
 			</div>
 		</nav>
 		<div class="header-main">
@@ -39,14 +38,14 @@
 
 <!--Основной текст-->
 	<div class="container clearfix">
-	<!-- Форма-->
+<!-- Форма-->
 		<div class="user-form">
 			<form action="#" method="get">
-			<!-- Стоимость-->
+<!-- Стоимость-->
 				<div class="user-form-cost">
-					<legend>Стоимость</legend>
+					<span>Стоимость</span>
 					<div class="user-form-cost-range">
-						<div class="scale" <!--style="margin-left: 20%; width: 30%"-->
+						<div class="scale">
 							<div class="bar"></div>
 							<div class="toggle toggle-min"></div>
 							<div class="toggle toggle-max"></div>
@@ -57,67 +56,59 @@
 						<label class="max-price">до<input name="max-price" type="text" value="15000"></label>
 					</div>
 				</div>
-		
-			<!-- Сетка-->
+<!-- Сетка-->
 				<div class="user-form-grid">
-					<legend>Сетка</legend>
+					<span>Сетка</span>
 					<ul>
 						<li><input type="radio" name="grid" id="grid-1" value="grid-1" checked="">
-						<label for="grid-1">Адаптивная</label></li>
-					
+							<label for="grid-1"><span></span>Адаптивная</label></li>
 						<li><input type="radio" name="grid" id="grid-2" value="grid-2">
-						<label for="grid-2">Фиксированная</label></li>
-					
+							<label for="grid-2"><span></span>Фиксированная</label></li>
 						<li><input type="radio" name="grid" id="grid-3" value="grid-3">
-						<label for="grid-3">Резиновая</label></li>
+							<label for="grid-3"><span></span>Резиновая</label></li>
 					</ul>
 				</div>
-			<!-- Особенности-->
+<!-- Особенности-->
 				<div class="user-form-grid">
-				<legend>Особенности</legend>
-				<ul class="checkbox">
-					<li><input type="checkbox" name="feature" id="feature-1" value="feature-1" checked="">
-					<label for="feature-1">Слайдер</label></li>
-				
-					<li><input type="checkbox" name="feature" id="feature-2" value="feature-2">
-					<label for="feature-2">Блок преимуществ</label></li>
-				
-					<li><input type="checkbox" name="feature" id="feature-3" value="feature-3" checked="">
-					<label for="feature-3">Новости</label></li>
-				
-					<li><input type="checkbox" name="feature" id="feature-4" value="feature-4">
-					<label for="feature-4">Галерея</label></li>
-				
-					<li><input type="checkbox" name="feature" id="feature-5" value="feature-5">
-					<label for="feature-5">Корзина</label></li>
-				</ul>
+					<span>Особенности</span>
+					<ul class="checkbox">
+						<li><input type="checkbox" name="feature" id="feature-1" value="feature-1" checked="">
+							<label for="feature-1"><span></span>Слайдер</label></li>
+						<li><input type="checkbox" name="feature" id="feature-2" value="feature-2">
+							<label for="feature-2"><span></span>Блок преимуществ</label></li>
+						<li><input type="checkbox" name="feature" id="feature-3" value="feature-3" checked="">
+							<label for="feature-3"><span></span>Новости</label></li>
+						<li><input type="checkbox" name="feature" id="feature-4" value="feature-4">
+							<label for="feature-4"><span></span>Галерея</label></li>
+						<li><input type="checkbox" name="feature" id="feature-5" value="feature-5">
+							<label for="feature-5"><span></span>Корзина</label></li>
+					</ul>
 				</div>
 				<div class="user-form-btn">
-				<input class="btn btn-grey" type="button" name="show" id="show" value="Показать">
+					<input class="btn btn-grey" type="button" name="show" id="show" value="Показать">
 				</div>
 			</form>
 		</div>
 <!-- основное меню-->
 		<div class="main">
-			<!--Cортировка -->
+<!--Cортировка -->
 			<div class="main-user-sort">
-				
 				<ul>
 					<li><b>Сортировать:</b></li>
 					<li><a href="#">По цене</a></li>
 					<li><a href="#" class="disabled">По типу</a></li>
 					<li><a href="#" class="disabled">По названию</a></li>
 					<li><a href="#" class="btn-sort"></a></li>
-					<li><a href="#"></a></li>
+					<li><a href="#" class="btn-sort"></a></li>
 				</ul>
 			</div>
-			<!-- Результаты поиска-->
+<!-- Результаты поиска-->
 				<ul class="user-market">
 					<li class="user-market-goods"><img src="img/catalog.html/img-sedona.jpg" width="360" height="576" alt="Sedona">
-					<div class="user-market-sedona-price">
-						<a href="#">Sedona</a>
-						<p>Информационный сайт<br> для туристов</p>
-						<button class="btn">9 900 руб.</button>
+						<div class="user-market-sedona-price">
+							<a href="#">Sedona</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
 					</div>
 					</li>
 					<li><img src="img/catalog.html/img-pink.jpg" width="360" height="576" alt="Pink"></li>
@@ -126,7 +117,7 @@
 					<li><img src="img/catalog.html/img-aplus.jpg" width="360" height="576" alt="A+"></li>
 					<li><img src="img/catalog.html/img-kvast.jpg" width="360" height="576" alt="Кваст"></li>
 				</ul>
-		<!-- Странички-->
+<!-- Странички-->
 			<div class="user-page">
 				<a href="#" class="user-page-btn current">1</a>
 				<a href="#" class="user-page-btn">2</a>
@@ -138,14 +129,20 @@
 <!-- Подвал-->
 	<div class="footer clearfix">
 	<div class="container clearfix">
-		<!-- Как проехать-->
-			<div class="footer-adress-contact">
-				<b>Nerds desigh studio</b>
-				<p>191186 Санкт-Петербург<br>
-				ул. Б.Конюшенная, д.19/8</p>
-				<p>тел.+7(812)275-75-75</p>
-				<form action="#" method="post">
-					<input class="btn" type="submit" name="write me" id="write me" value="Напишите нам">
+<!-- Как проехать-->
+		<div class="footer-adress-contact">
+			<b>Nerds desigh studio</b>
+			<p>191186 Санкт-Петербург<br>
+			ул. Б.Конюшенная, д.19/8</p>
+			<p>тел.+7(812)275-75-75</p>
+			<input class="btn writeme" type="submit" name="write" id="write" value="Напишите нам">
+				<form class="letter" action="#" method="post">
+					<b>Напишите нам</b><br>
+					<label>Ваше имя:<input type="text" name="your name" id="your-name" value="Представьтесь, пожалуйста"></label>
+					<label>Ваш e-mail:<input type="email" name="email" id="email" value="Для отправки ответа"></label><br>
+					<b>Текст письма:</b><br>
+					<textarea name="text" id="text">В свободной форме</textarea><br>
+					<input type="submit" value="Отправить">
 				</form>
 			</div>
 			<div class="footer-adress-logo">
@@ -157,13 +154,13 @@
 	<div class="container clearfix">
 		<div class="footer-social clearfix">
 			<div class="footer-social-btn">
-			<a href="#" class="social-btn social-vk" alt="ВК"></a>
-			<a href="#" class="social-btn social-fb" alt="FB"></a>
-			<a href="#" class="social-btn social-i" alt="I"></a>
+				<a href="#" class="social-btn social-vk"></a>
+				<a href="#" class="social-btn social-fb"></a>
+				<a href="#" class="social-btn social-i"></a>
 			</div>
 			<div class="footer-social-sale">
-			<b>Давайте дружить, это выгодно!</b>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
 	</div>

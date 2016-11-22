@@ -1,50 +1,85 @@
 body
 {
 	font-size: 16px;
-	font-family: "Roboto", "Arial";
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 24px;
 }
 
-.sprite {
+.sprite 
+{
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-cart-icon {
+.sprite-cart-icon 
+{
     width: 15px;
     height: 15px;
     background-position: -20px -20px;
 }
 
-.sprite-fb-icon {
+.sprite-fb-icon 
+{
     width: 12px;
     height: 22px;
     background-position: -20px -75px;
 }
 
-.sprite-insta-icon {
+.sprite-insta-icon 
+{
     width: 21px;
     height: 21px;
     background-position: -20px -137px;
 }
 
-.sprite-sort-down {
+.sprite-sort-down 
+{
     width: 9px;
     height: 9px;
     background-position: -20px -198px;
 }
 
-.sprite-sort-up {
+.sprite-sort-up 
+{
     width: 9px;
     height: 9px;
     background-position: -20px -247px;
 }
 
-.sprite-vk-icon {
+.sprite-vk-icon 
+{
     width: 26px;
     height: 15px;
     background-position: -20px -296px;
+}
+
+.sprite-checkbox-off 
+{
+    width: 27px;
+    height: 23px;
+    background-position: -20px -20px;
+}
+
+.sprite-checkbox-on 
+{
+    width: 27px;
+    height: 23px;
+    background-position: -20px -83px;
+}
+
+.sprite-radio-off 
+{
+    width: 25px;
+    height: 25px;
+    background-position: -20px -146px;
+}
+
+.sprite-radio-on 
+{
+    width: 25px;
+    height: 25px;
+    background-position: -20px -211px;
 }
 
 h2
@@ -57,31 +92,14 @@ h2
 h3
 {
 	font-size: 24px;
-	text-transform: uppercase;
 	text-align: left;
+	line-height: 22px;
+	text-transform: uppercase;
 }
-
-/**
-{
-	box-sizing: border-box;
-}
-
-*before
-{
-	box-sizing: border-box;
-}
-
-*after
-{
-	box-sizing: border-box;
-}
-*/
-
 
 .clearfix::after 
 {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -96,7 +114,7 @@ h3
 .header
 {
 	background: #eeeeee;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 
 .header-menu-logo
@@ -123,10 +141,10 @@ h3
 	float: left;
 	width: 640px;
 	padding-top: 75px;
-	padding-bottom: 20px;
 }
 
-.header-menu-navigation ul {
+.header-menu-navigation ul 
+{
   	margin: 0;
   	padding: 0;
   	list-style: none;
@@ -164,23 +182,43 @@ h3
 	opacity: 0.3;
 }
 
+.header-menu-navigation .active 
+{
+  	position: relative;
+  	background-color: none;
+}
+
+.header-menu-navigation .active a:hover 
+{
+  	color: black;
+}
+
+.header-menu-navigation .active::after 
+{
+  	content: "";
+  	position: absolute;
+  	right: 0px;
+  	bottom: 0;
+  	left: 0px;
+	height: 1px;
+	width: 100%;
+	background-color: #fb565a;
+}
+
 .header-menu-box
 {
 	float: right;
 	max-width: 160px;
 	padding-top: 80px;
-	padding-bottom: 20px;
 }
 
 .header-menu-box-enter
 {
 	position: relative;
-	
 	display: inline-block;
 	vertical-align: top;
-	
 	font-size: 16px;
-	line-height: 30px;
+	line-height: 24px;
 	text-transform: uppercase;
 	color: black;
 	text-decoration: none;
@@ -191,15 +229,14 @@ h3
 	color: #fb565a;
 }
 
-.header-menu-box-enter::before {
+.header-menu-box-enter::before 
+{
 	content: "";
 	position: absolute;
-	top: 6px;
-	left: -35px;
-  
-	width: 18px;
+	top: 3px;
+	left: -40px;
+  	width: 18px;
 	height: 18px;
-
 	background: transparent url("../img/sprite.png") no-repeat;
 	background-position: -20px -20px;
 	opacity: 0.3;
@@ -212,40 +249,45 @@ h3
     height:420px;
     margin:0 auto;
 }
+
 .slider input[type=radio] 
 {
     position:absolute;
     opacity:0;
 }
+
 .slider-controls
 {
-    position:absolute;
-    bottom:95px;
-    left:50%;
-    width:200px;
-    height:10px;
-    margin-left:-100px;
-    text-align:center;
-    z-index:1000;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
 }
+
 .slider-controls label
 {
     display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
+    width: 10px;
+    height: 10px;
+    margin:0 8px;
     background:white;
     border:3px solid white;
     vertical-align:top;
     border-radius:50%;
     cursor:pointer;
 }
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] 
 { 
     background:#c1c1c1;
 }
+
 .slide
 {
     position:absolute;
@@ -255,12 +297,14 @@ h3
     height:100%;
     overflow:hidden;
 }
+
 .slide-text
 {
     width:380px;
-    padding:30px 0;
+    padding:20px 0;
     color:#283136;
 }
+
 .slide-title
 {
     font-size:55px;
@@ -273,32 +317,38 @@ h3
 {
     background-image:url("../img/index.html/slider-1.jpg");
     background-repeat:no-repeat;
-    background-position:100% 10px;
+    background-position:100% -50px;
 }
+
 .slide:nth-child(2)
 {
     background-image:url("#");
     background-repeat:no-repeat;
     background-position:100% 10px;
 }
+
 .slide:nth-child(3)
 {
     background-image:url("#");
     background-repeat:no-repeat;
     background-position:100% 0;
 }
+
 .slide
 {
     display:none;
 }
+
 #btn-1:checked ~ .slides .slide:nth-child(1) 
 { 
     display: block;
 }
+
 #btn-2:checked ~ .slides .slide:nth-child(2) 
 { 
     display: block;
 }
+
 #btn-3:checked ~ .slides .slide:nth-child(3) 
 { 
     display: block;
@@ -306,7 +356,7 @@ h3
 
 .user-menu
 {
-	margin-top: 80px;
+	margin-top: 20px;
 	margin-bottom: 79px;
 	padding-bottom: 79px;
 	border-bottom: 2px solid #eeeeee;
@@ -378,6 +428,12 @@ h3
 	margin-bottom: 40px;
 }
 
+.user-about-plus-logo p
+{
+	font-size: 16px;
+	font-weight: 24px;
+}
+
 .user-about-plus-procent ul
 {
 	margin: 0;
@@ -391,12 +447,14 @@ h3
 	width: 100px;
 	margin-right: 20px;
 	vertical-align: top;
+	font-size: 16px;
+	line-height: 18px;
 }
 
-.user-about-plus-procent li b
+.user-about-plus-procent b
 {
 	font-size: 45px;
-	line-height: 10,6px;
+	line-height: 10.6px;
 }
 
 .user-about-plus-procent li:last-child
@@ -440,7 +498,6 @@ h3
 {
 	opacity: 1;
 }
-
 
 .user-projects:active
 {
@@ -490,11 +547,6 @@ h3
 	display: none;
 }
 
-.writeme:target+.letter
-{
-	display: block;
-}
-
 .footer-adress-logo
 {
 	float: right;
@@ -531,7 +583,6 @@ h3
 .btn {
     display: inline-block;
 	padding: 20px 40px;
-    
     font-weight: 700;
 	font-size: 16px;
  	line-height: 18px;
@@ -541,8 +592,7 @@ h3
 	text-decoration: none;
 	vertical-align: top;
   	text-align: center;
-  
- 	color: #ffffff;
+   	color: #ffffff;
  	background-color: #fb565a;
  	border: none;
 	cursor: pointer;
@@ -558,6 +608,12 @@ h3
   	cursor: default;
   	background-color: #d7373b;
   	opacity: 0.8;
+}
+
+.btn-red
+{
+	width: 250px;
+	height: 15px;
 }
 
 .btn-green 
@@ -586,7 +642,7 @@ h3
 	cursor: pointer;
 }
 
-.btn-yellow:hover,
+.btn-yellow:hover
 {
   	background-color: #eab534;
 }
@@ -598,18 +654,16 @@ h3
   	opacity: 0.8;
 }
 
-.social-btn {
+.social-btn 
+{
 	display: inline-block;
-  	 	
   	width: 80px;
   	height: 80px;
   	border-radius: 50px;
   	margin: 0 2px;
-  	
   	font-size: 0;
   	vertical-align: top;
   	text-decoration: none;
-
   	background: #e1e1e1 url("../img/sprite.png") no-repeat center;
 }
 
@@ -678,6 +732,11 @@ h3
 	width: 760px;
 }
 
+.header-main
+{
+	padding-bottom: 62px;
+}
+
 .user-form
 {
 	float: left;
@@ -690,25 +749,28 @@ h3
 	display: inline-block;
 	vertical-align: top;
 	width: 260px;
+	margin-bottom: 40px;
  }
 
-.user-form-cost legend
+.user-form-cost span
 {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 100px;
 }
 
-.user-form-grid legend
+.user-form-grid
+{
+	margin-top: 40px;
+}
+
+.user-form-grid span
 {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-top: 40px;
-	margin-bottom: 20px;
 }
 
 .user-form-grid ul
@@ -722,26 +784,6 @@ h3
 {
 	line-height: 30px;
 }
-
-/*input[type=checkbox] 
-{
-    display: none;
-}
-
-.checkbox label:before 
-{
-    border-radius: 3px;
-}
-
-input[type=checkbox]:checked + label:before 
-{
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 15px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 15px;
-}*/
 
 .btn-grey 
 {
@@ -831,7 +873,8 @@ input[type=checkbox]:checked + label:before
    text-align: right;
 }
 
-.user-form-cost-prise-control input {
+.user-form-cost-prise-control input 
+{
   	font-family: 'Roboto', 'Arial', sans-serif;
   	font-size: 16px;
     width: 60px;
@@ -862,7 +905,6 @@ input[type=checkbox]:checked + label:before
 {
 	display: inline-block;
 	vertical-align: top;
-	
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -896,38 +938,51 @@ input[type=checkbox]:checked + label:before
 	margin-right: 278px;
 }
 
-.btn-sort
+.main-user-sort li:nth-child(5)
 {
 	position: relative;
-	
 	display: inline-block;
 	vertical-align: top;
-	
-	font-size: 16px;
-	line-height: 30px;
-	text-transform: uppercase;
-	color: black;
-	text-decoration: none;
+	padding-right: 15px;
+	cursor: pointer;
 }
 
-.btn-sort:hover
+.main-user-sort li:nth-child(5):before
 {
-	color: #fb565a;
-}
-
-
-.btn-sort::before {
 	content: "";
 	position: absolute;
 	top: 3px;
 	left: 30px;
-  
 	width: 10px;
 	height: 10px;
-
 	background: transparent url("../img/sprite.png") no-repeat;
 	background-position: -20px -198px;
-	/*opacity: 0.3;*/
+}
+/*
+.main-user-sort li:nth-child(5):hover:before
+{
+	content: "";
+	color: #fb565a;
+}*/
+
+.main-user-sort li:nth-child(6)
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.main-user-sort li:nth-child(6):before
+{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 30px;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../img/sprite.png") no-repeat;
+	background-position: -20px -247px;
 }
 
 .user-market
@@ -1011,14 +1066,12 @@ input[type=checkbox]:checked + label:before
     height: 40px;
     padding: 0px 10px;
     margin-left: 10px;
-    
     line-height: 40px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
     text-decoration: none;
     color: black;
-    
     background: #eeeeee;
 }
 
@@ -1044,3 +1097,87 @@ input[type=checkbox]:checked + label:before
 {
 	width: 260px;
 }
+
+input[type="checkbox"]
+{
+	display: none;
+}
+
+input[type="checkbox"] + label span
+{
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+	padding-right: 5px;
+	vertical-align: middle;
+	background: url("../img/sprite_checkbox.png") no-repeat;
+	background-position: -20px -83px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+input[type="checkbox"] 
+{
+    display:none;
+}
+
+input[type="checkbox"] + label span 
+{
+    display: inline-block;
+    width: 27px;
+    height: 23px;
+    padding-right: 5px;
+    vertical-align: middle;
+	background: url("../img/sprite_checkbox.png") no-repeat;
+	background-position: -20px -20px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+/*
+input[type="checkbox"]:checked + label span 
+{
+    background: url("../img/sprite_checkbox.png") -20px top no-repeat;
+}
+*/
+
+input[type="radio"]
+{
+	display: none;
+}
+
+input[type="radio"] + label span
+{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding-right: 5px;
+	vertical-align: middle;
+	background: url("../img/sprite_checkbox.png") no-repeat;
+	background-position: -20px -211px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+input[type="radio"] 
+{
+    display:none;
+}
+
+input[type="radio"] + label span 
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin:-1px 4px 0 0;
+    vertical-align: middle;
+	background: url("../img/sprite_checkbox.png") no-repeat;
+	background-position: -20px -146px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+/*
+input[type="radio"]:checked + label span 
+{
+    background: url("../img/sprite_checkbox.png") -20px top no-repeat;
+}
+*/
