@@ -958,12 +958,12 @@ h3
 	background: transparent url("../img/sprite.png") no-repeat;
 	background-position: -20px -198px;
 }
-/*
+
 .main-user-sort li:nth-child(5):hover:before
 {
 	content: "";
 	color: #fb565a;
-}*/
+}
 
 .main-user-sort li:nth-child(6)
 {
@@ -1133,12 +1133,11 @@ input[type="checkbox"] + label span
 	opacity: 0.3;
 	cursor: pointer;
 }
-/*
+
 input[type="checkbox"]:checked + label span 
 {
-    background: url("../img/sprite_checkbox.png") -20px top no-repeat;
+    background: url("../img/sprite_checkbox.png") -20px -83px no-repeat;
 }
-*/
 
 input[type="radio"]
 {
@@ -1175,9 +1174,8 @@ input[type="radio"] + label span
 	opacity: 0.3;
 	cursor: pointer;
 }
-/*
+
 input[type="radio"]:checked + label span 
 {
-    background: url("../img/sprite_checkbox.png") -20px top no-repeat;
+    background: url("../img/sprite_checkbox.png") -20px -211px no-repeat;
 }
-*/
