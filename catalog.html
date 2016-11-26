@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
 
 <!-- Шапка сайта-->
 	<div class="header">
@@ -18,21 +18,17 @@
 			<div class="header-menu-logo">
 				<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></a>
 			</div>
-			<div class="header-menu-navigation">
-				<ul>
+				<ul class="header-menu-navigation">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
 					<li><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-			</div>
 			<div class="header-menu-box">
 				<a class="header-menu-box-enter" href="#">Корзина</a>
 			</div>
 		</nav>
-		<div class="header-main">
-			<h2>Магазин готовых шаблонов</h2>
-		</div>
+			<h2 class="header-main">Магазин готовых шаблонов</h2>
 	</div>
 	</div>
 
@@ -85,7 +81,7 @@
 					</ul>
 				</div>
 				<div class="user-form-btn">
-					<input class="btn btn-grey" type="button" name="show" id="show" value="Показать">
+					<button class="btn btn-grey">Показать</button>
 				</div>
 			</form>
 		</div>
@@ -105,17 +101,47 @@
 <!-- Результаты поиска-->
 				<ul class="user-market">
 					<li class="user-market-goods"><img src="img/catalog.html/img-sedona.jpg" width="360" height="576" alt="Sedona">
-						<div class="user-market-sedona-price">
+						<div class="user-market-price">
 							<a href="#">Sedona</a>
 							<p>Информационный сайт<br> для туристов</p>
 							<button class="btn">9 900 руб.</button>
-					</div>
+						</div>
 					</li>
-					<li><img src="img/catalog.html/img-pink.jpg" width="360" height="576" alt="Pink"></li>
-					<li><img src="img/catalog.html/img-barbershop.jpg" width="360" height="576" alt="Borodinsky"></li>
-					<li><img src="img/catalog.html/img-mishka.jpg" width="360" height="576" alt="Mishka"></li>
-					<li><img src="img/catalog.html/img-aplus.jpg" width="360" height="576" alt="A+"></li>
-					<li><img src="img/catalog.html/img-kvast.jpg" width="360" height="576" alt="Кваст"></li>
+					<li class="user-market-goods"><img src="img/catalog.html/img-pink.jpg" width="360" height="576" alt="Pink">
+						<div class="user-market-price">
+							<a href="#">Pink</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
+						</div>
+					</li>	
+					<li class="user-market-goods"><img src="img/catalog.html/img-barbershop.jpg" width="360" height="576" alt="Borodinsky">
+						<div class="user-market-price">
+							<a href="#">Borodinski</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
+						</div>
+					</li>
+					<li class="user-market-goods"><img src="img/catalog.html/img-mishka.jpg" width="360" height="576" alt="Mishka">
+						<div class="user-market-price">
+							<a href="#">Mishka</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
+						</div>
+					</li>
+					<li class="user-market-goods"><img src="img/catalog.html/img-aplus.jpg" width="360" height="576" alt="A+">
+						<div class="user-market-price">
+							<a href="#">A+</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
+						</div>
+					</li>	
+					<li class="user-market-goods"><img src="img/catalog.html/img-kvast.jpg" width="360" height="576" alt="Кваст">
+						<div class="user-market-price">
+							<a href="#">Kvast</a>
+							<p>Информационный сайт<br> для туристов</p>
+							<button class="btn">9 900 руб.</button>
+						</div>
+					</li>
 				</ul>
 <!-- Странички-->
 			<div class="user-page">
@@ -131,11 +157,12 @@
 	<div class="container clearfix">
 <!-- Как проехать-->
 		<div class="footer-adress-contact">
-			<b>Nerds desigh studio</b>
-			<p>191186 Санкт-Петербург<br>
-			ул. Б.Конюшенная, д.19/8</p>
-			<p>тел.+7(812)275-75-75</p>
-			<input class="btn writeme" type="submit" name="write" id="write" value="Напишите нам">
+			<span>Nёrds design studio</span>
+			<p>191186, Санкт-Петербург,<br>
+			ул. Б. Конюшенная, д. 19/8
+			</p>
+			<p>тел. + 7 (812) 275-75-75</p>
+			<button class="btn writeme">Напишите нам</button>
 				<form class="letter" action="#" method="post">
 					<b>Напишите нам</b><br>
 					<label>Ваше имя:<input type="text" name="your name" id="your-name" value="Представьтесь, пожалуйста"></label>
@@ -144,19 +171,17 @@
 					<textarea name="text" id="text">В свободной форме</textarea><br>
 					<input type="submit" value="Отправить">
 				</form>
-			</div>
-			<div class="footer-adress-logo">
-				<img src="img/map-marker.png" width="367" height="190" alt="Логотип">
-			</div>
+			<div class="footer-adress-logo"></div>
 		</div>
-		</div>
+	</div>
+	</div>
 <!-- Социальная сети-->
 	<div class="container clearfix">
 		<div class="footer-social clearfix">
 			<div class="footer-social-btn">
-				<a href="#" class="social-btn social-vk"></a>
-				<a href="#" class="social-btn social-fb"></a>
-				<a href="#" class="social-btn social-i"></a>
+				<a class="social-btn social-vk" href="#"></a>
+				<a class="social-btn social-fb" href="#"></a>
+				<a class="social-btn social-i" href="#"></a>
 			</div>
 			<div class="footer-social-sale">
 				<b>Давайте дружить, это выгодно!</b>
@@ -164,5 +189,5 @@
 			</div>
 		</div>
 	</div>
-  </body>
+	</body>
 </html>
